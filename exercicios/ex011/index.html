@@ -18,8 +18,14 @@
 
     <h1>Reproduzindo audio</h1>
     <p>Vamos aprender a reproduzir audios em HTML5!</p>
-    <audio >
-        <source src="" type="">
-    </audio>
+    <audio src="midia/baroque.mp3" controls autoplay></audio>
+    <!-- MP3, WAV, OGG-->
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/baroque.mp3" type="audio/mpeg">
+            <source src="midia/baroque.ogg" type="audio/ogg">
+            >
+            <source src="midia/baroque.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue abir audio <a href="midia/baroque.mp3">Clique aqui para baixar o seu arquivo MP3</a></p>
+        </audio>
 </body>
 </html>
